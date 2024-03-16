@@ -1,0 +1,53 @@
+/* '*" selector applies rule to all elements visible on the page */
+ * {
+    margin:0;
+    padding:0;
+}
+
+/* we can combine two selectors into a single css rule with a comma, allowing declarations to 
+affect both selectors. This helps us write Do Not Repeat Yourself (DRY) code */
+header,
+footer {
+    width:100%;
+    height:120px;
+    background-color: blue;
+    color: white;
+
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* we can also apply css rules to img element */
+/* The <img> selector assigns property value to any image element in the markup. The display property is assigned
+with block value, which assigns each image to start on a new line */
+img { 
+    display:block;
+    height:50px;
+    width:50px;
+    margin-left: auto;
+    margin-right:auto;
+}
+/* Unordered list. Bullet points */
+ul {
+
+    padding-left: 40px;
+    font-size: 20px;
+
+}
+/* Paragraph */
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Class selector */
+
+.card {
+    width:80%;
+    margin:40px auto;
+    border: 5px solid gray;
+    box-shadow: 5px 10px #888888;
+}
